@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title_main"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <Button
+        android:id="@+id/btnSpotify"
+        style="@style/PortfolioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="@string/btn_spotify" />
+
+    <Button
+        android:id="@+id/btnScores"
+        style="@style/PortfolioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSpotify"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btn_scores" />
+
+    <Button
+        android:id="@+id/btnLibrary"
+        style="@style/PortfolioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnScores"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btn_library" />
+
+    <Button
+        android:id="@+id/btnBuildItBigger"
+        style="@style/PortfolioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLibrary"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btn_build_it_bigger" />
+
+    <Button
+        android:id="@+id/btnXYZ"
+        style="@style/PortfolioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBuildItBigger"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btn_xyz_reader" />
+
+    <Button
+        android:id="@+id/btnCapstone"
+        style="@style/PortfolioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnXYZ"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_red_dark"
+        android:text="@string/btn_capstone" />
+</RelativeLayout>
